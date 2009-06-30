@@ -1,0 +1,10 @@
+Fault tolerant version of cron
+====================================
+
+TODO: Finish readme when I get time. Basic concept is you can configure your erlang nodes in distributed mode.
+You have a simple bash script or python script (coming soon) that runs on crontab, if returns 0, execute, else don't.
+
+Example:
+
+* * * * * is_ready.sh && execute_some_script 2>/dev/null
+
